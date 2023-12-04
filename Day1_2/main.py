@@ -11,21 +11,10 @@ finally:
 
 
 def number_in_letters(temp):
-    my_dict = {
-        'one': 1,
-        'two': 2,
-        'three': 3,
-        'four': 4,
-        'five': 5,
-        'six': 6,
-        'seven': 7,
-        'eight': 8,
-        'nine': 9,
-        'zero': 0,
-    }
-    for key in my_dict.keys():
-        if key in temp:
-            return int(my_dict.get(key))
+    my_long_array = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    for num in my_long_array:
+        if num in temp:
+            return my_long_array.index(num)
 
 
 def find_left(lines):
